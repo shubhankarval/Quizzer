@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: purple;
+    position: fixed;
+    top: 0;
+    height: var(--nav-height);
+    width: 100%;
+    padding: 0 20px 0 30px;
+    z-index: 99;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a{
+    font-family: var(--prompt);
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    padding: 20px;
+    color: white;
+}
+
+.logo{
+    font-family: var(--lobster);
+    font-size: 2.25em;
+    color: white;
+}

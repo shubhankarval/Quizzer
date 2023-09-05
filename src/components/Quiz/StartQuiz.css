@@ -1,0 +1,59 @@
+.start-card{
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    z-index: 3;
+
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  
+  }
+
+  .start-card.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+
+  .start-card .purple-top {
+    background-color: purple;
+    height: 50px;
+    width: 100%;
+  }
+
+  .start-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .start-card h1{
+    font-family: var(--arc-black);
+    font-size: 1.8em;
+    color: var(--black);
+  }
+
+  .start-card span{
+    font-family: var(--prompt);
+    font-size: 1.3em;
+  }
+
+  .start-card button{
+    font-family: var(--prompt);
+    font-size: 1.3em;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+    border: none;
+  }
+

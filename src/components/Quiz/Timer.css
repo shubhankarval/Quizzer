@@ -1,0 +1,17 @@
+.timer{
+  display: flex;
+  align-items: center;
+}
+
+.timer-bar-container{
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  height: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 15px;
+}
+
+.timer-bar {
+    height: 10px;
+  }
