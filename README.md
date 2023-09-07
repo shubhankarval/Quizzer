@@ -23,4 +23,9 @@ Check out the live demo of Quizzer to start preparing for your technical intervi
     
 ***Important Note***: Website is hosted with Render's free plan, so it takes 30 seconds to initially load.
 
+## Preview
+![Quizzer](https://i.imgur.com/K33pQ4Q.png)&nbsp;&nbsp;&nbsp;
+![Question](https://i.imgur.com/WkikHTV.png)
+
+
 
