@@ -34,7 +34,7 @@ export default function QuizMenu() {
                     .toLowerCase()
                     .replace(/\s+/g, "-")}`}
                 >
-                  <Card title={item.title} imageUrl={"/1.png"} />
+                  <Card title={item.title} imageUrl={`/${item.id}.png`} />
                 </Link>
               ))}
             </div>

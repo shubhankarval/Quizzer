@@ -29,7 +29,6 @@ export default function Quiz() {
 
   if (data) {
     quizTime = data.time;
-    // quizTime = 40;
     title = data.title;
     questions = data.questions;
   }
