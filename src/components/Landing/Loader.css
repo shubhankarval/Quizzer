@@ -1,0 +1,14 @@
+.loader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--mons);
+}
+
+.loader p{
+    margin: 0;
+}
+
+.loader p:first-of-type{
+    margin-top: 15px;
+}

@@ -1,64 +1,84 @@
-.blur{
-    filter: blur(3px);
+.blur {
+  filter: blur(3px);
 }
 
-.quiz-container{
-    border-radius: 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 70%;
-    margin: 3em auto 0;
+.quiz-container {
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 70%;
+  margin: 3em auto 0;
 }
 
 .quiz-container .purple-top {
-    background-color: purple;
-    height: 50px;
-    width: 100%;
+  background-color: purple;
+  height: 50px;
+  width: 100%;
 }
 
-.quiz-interface{
-    padding: 2em;
+.quiz-interface {
+  padding: 2em;
 }
 
-.question{
-    display: flex;
-    font-size: 1.3em;
-    font-family: var(--mons);
-    font-weight: 600;
-    color: var(--black);
+.question {
+  display: flex;
+  font-size: 1.3em;
+  font-family: var(--mons);
+  font-weight: 600;
+  color: var(--black);
 }
 
-.question span{
-    font-weight: 500;
-    padding: 0 10px;
+.question span {
+  font-weight: 500;
+  padding: 0 10px;
 }
 
-.quiz-interface ul{
-    list-style-type: none;
+.quiz-interface ul {
+  list-style-type: none;
 }
 
-.quiz-interface li{
-    font-family: var(--mons);
-    font-size: 1.2em;
-    margin: 15px 0;
+.quiz-interface li {
+  font-family: var(--mons);
+  font-size: 1.2em;
+  margin: 15px 0;
 }
 
-.quiz-interface input{
-    padding-left: 10px;
+.quiz-interface input {
+  padding-left: 10px;
 }
 
-
-.quiz-button-wrapper{
-    display: flex;
-    justify-content: flex-end;
+.quiz-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.quiz-interface button{ 
-    font-family: var(--prompt);
-    font-size: 1em;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: purple;
-    color: white;
-    border: none;
-}   
+.quiz-interface button {
+  font-family: var(--prompt);
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: purple;
+  color: white;
+  border: none;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.quiz-interface button:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+  transform: scale(1.4);
+}
+
+.quiz-interface button:hover {
+  padding-right: 28px;
+  padding-left: 12px;
+}
+
+.quiz-interface button:hover:after {
+  opacity: 1;
+  right: 10px;
+}

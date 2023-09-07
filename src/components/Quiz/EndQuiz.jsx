@@ -8,7 +8,7 @@ import {
 import { Link } from "react-router-dom";
 import "./EndQuiz.css";
 
-export default function EndQuiz({ score }) {
+export default function EndQuiz({ score}) {
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
@@ -22,6 +22,11 @@ export default function EndQuiz({ score }) {
     };
   }, []);
 
+  const handleReload = () => {
+    // Reload the page when the button is pressed
+    window.location.reload();
+  };
+
   return (
     <div className={`end-card ${isActive ? "active" : ""}`}>
       <div className="purple-top"></div>
@@ -29,18 +34,15 @@ export default function EndQuiz({ score }) {
         <h1>
           <FontAwesomeIcon icon={faSquarePollVertical} /> Results
         </h1>
-        <span>{score}</span>
-        {/* <p>{score} questions answered correctly</p> */}
+        <span>{score} correct</span>
         <Link to="/">
           <button>
             <FontAwesomeIcon icon={faHome} /> Home
           </button>
         </Link>
-        <Link to='/'>
-          <button>
+          <button onClick={handleReload}>
             <FontAwesomeIcon icon={faArrowRotateRight} /> Replay
           </button>
-        </Link>
       </div>
     </div>
   );

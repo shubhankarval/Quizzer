@@ -57,3 +57,6 @@
     border: none;
   }
 
+  .start-card button:hover{
+    background-color: rgb(97, 1, 97);
+  }

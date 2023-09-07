@@ -1,9 +1,12 @@
-.timer{
+.timer {
   display: flex;
   align-items: center;
+  padding: 0 3em 0 1em;
+  margin: 2em 2em 0 2em;
+  position: relative;
 }
 
-.timer-bar-container{
+.timer-bar-container {
   border-radius: 5px;
   border: 1px solid var(--black);
   height: 10px;
@@ -13,5 +16,12 @@
 }
 
 .timer-bar {
-    height: 10px;
-  }
+  height: 10px;
+}
+
+.remaining-time {
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  font-family: var(--prompt);
+}

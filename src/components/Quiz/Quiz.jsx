@@ -22,13 +22,14 @@ export default function Quiz() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3030/quiz/${id}`)
+      .get(`https://quizzer-backend-jz99.onrender.com/quiz/${id}`)
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);
 
   if (data) {
     quizTime = data.time;
+    // quizTime = 40;
     title = data.title;
     questions = data.questions;
   }
@@ -49,6 +50,7 @@ export default function Quiz() {
 
   return (
     <>
+
       {data && (
         <TakeQuiz
           onCompleteQuiz={completeQuiz}
@@ -72,7 +74,7 @@ export default function Quiz() {
       {currentState === "result" && data && (
         <>
           <ModalOverlay />
-          <EndQuiz score={score}/>
+          <EndQuiz score={score} />
         </>
       )}
     </>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './Timer.css'
 
-export default function Timer({maxTime, onCompleteQuiz}) {
+export default function Timer({maxTime, completeQuiz}) {
     const [remainingTime, setRemainingTime] = useState(maxTime);
 
     useEffect(() => {
@@ -22,7 +22,7 @@ export default function Timer({maxTime, onCompleteQuiz}) {
       if (remainingTime === 0) {
         setTimeout(() => {
           // alert("Time expired!");
-          onCompleteQuiz();
+          completeQuiz();
         }, 1000); // Delay the alert by 1 second (1000ms)
       }
     }, [remainingTime]);

@@ -48,18 +48,17 @@
     margin-bottom: 15px;
   }
 
-  .end-card p{
-    font-family: var(--mons);
-    font-size: 1em;
-  }
-
   .end-card button{
     font-family: var(--prompt);
     font-size: 1em;
     padding: 10px 20px;
-    margin: 5px;
+    margin: 7px;
     border-radius: 10px;
     background-color: purple;
     color: white;
     border: none;
+  }
+
+  .end-card button:hover{
+    background-color: rgb(97, 1, 97);
   }

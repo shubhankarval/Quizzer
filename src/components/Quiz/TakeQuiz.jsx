@@ -15,7 +15,15 @@ export default function TakeQuiz({ quizTime, onCompleteQuiz, blur, questions, se
     if (!blur) {
       setTime(quizTime);
     }
+    else{
+      setTime(Infinity);
+    }
   }, [blur]); // Run this effect whenever the blur changes
+
+  const completeQuiz = () => {
+    setScore(`${correct}/${questions.length}`)
+    onCompleteQuiz();
+  }
 
   const handleNextQuestion = () => {
     if (!selectedOption) {
@@ -23,6 +31,7 @@ export default function TakeQuiz({ quizTime, onCompleteQuiz, blur, questions, se
     } 
 
     else{
+
       let changed = false;
       if(selectedOption === currentQuestion.correctAnswer){
         setCorrect(correct + 1);
@@ -59,7 +68,7 @@ export default function TakeQuiz({ quizTime, onCompleteQuiz, blur, questions, se
 
   return (
     <div className={blur ? 'blur' : ''}>
-      <Timer className='quiz-timer' maxTime={time} onCompleteQuiz={onCompleteQuiz} />
+      <Timer className='quiz-timer' maxTime={time} completeQuiz={completeQuiz} />
       <div className="quiz-container">
         <div className="purple-top"></div>
         <div className="quiz-interface">

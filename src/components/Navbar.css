@@ -18,11 +18,18 @@ nav{
 }
 
 nav a{
+    font-size: 1.4em;
     font-family: var(--prompt);
     font-weight: 200;
     letter-spacing: 0.5px;
     padding: 20px;
     color: white;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover{
+    color: rgb(235, 234, 234);
+    transform: translateY(-1.5px);
 }
 
 .logo{

@@ -11,7 +11,7 @@ export default function StartQuiz({ onStartQuiz, quizTime, title, questions }) {
     // Trigger the animation after a short delay to allow CSS to apply
     const animationTimeout = setTimeout(() => {
       setIsActive(true);
-    }, 300);
+    }, 200);
 
     return () => {
       clearTimeout(animationTimeout);
