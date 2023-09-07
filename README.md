@@ -19,7 +19,7 @@ Quizzer is a web-based quiz application designed to help aspiring full-stack and
 
 ## Live Demo
 
-Check out the live demo of Quizzer to start preparing for your technical interviews:[Quizzer Demo](https://quizzer-hub.netlify.app)   
+Check out the live demo of Quizzer to start preparing for your technical interviews:  [Quizzer Demo](https://quizzer-hub.netlify.app)   
     
 ***Important Note***: Website is hosted with Render's free plan, so it takes 30 seconds to initially load.
 
