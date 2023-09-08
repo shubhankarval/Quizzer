@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Kanit:wght@500;600;700&family=Lobster&family=Montserrat:wght@300;400;500;600&family=PT+Sans&family=Prompt:wght@100;200;300&family=Raleway:wght@600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@600;700;800&family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Kanit:wght@500;600;700&family=Lobster&family=Montserrat:wght@300;400;500;600&family=PT+Sans&family=Prompt:wght@100;200;300&family=Raleway:wght@600;700;800&display=swap');
 :root{
     --bricolage: 'Bricolage Grotesque', sans-serif; /* 400, 500, 600 */
     --pt-sans: 'PT Sans', sans-serif; /* 400 */
@@ -8,6 +7,7 @@
     --kanit: 'Kanit', sans-serif;
     --raleway: 'Raleway', sans-serif;
     --arc-black: 'Archivo Black', sans-serif;
+    --archivo: 'Archivo', sans-serif;
     --mons: 'Montserrat', sans-serif;
 
     --black:rgb(32, 31, 31);

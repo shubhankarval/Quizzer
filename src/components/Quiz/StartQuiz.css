@@ -69,12 +69,10 @@
       left: calc(50% - 125px);    
     }
   
-    .start-content{
-      padding: 0;
-    }
-  
     .start-card h1{
       font-size: 1.3em;
+      font-family: var(--archivo);
+      font-weight: 800;
     }
   
     .start-card span{
