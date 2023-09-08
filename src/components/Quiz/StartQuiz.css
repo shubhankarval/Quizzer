@@ -60,3 +60,30 @@
   .start-card button:hover{
     background-color: rgb(97, 1, 97);
   }
+
+  @media only screen and (max-width: 769px) {
+
+    .start-card{
+      width: 250px;
+      top: calc(50% - 125px);
+      left: calc(50% - 125px);    
+    }
+  
+    .start-content{
+      padding: 0;
+    }
+  
+    .start-card h1{
+      font-size: 1.3em;
+    }
+  
+    .start-card span{
+      font-size: 1em;
+      color: rgb(92, 91, 91);
+    }
+  
+    .start-card button{
+      font-size: 1em;
+      margin: 15px;
+    }
+  }

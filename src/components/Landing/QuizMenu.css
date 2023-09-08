@@ -34,3 +34,18 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@media only screen and (max-width: 769px) {
+    .quiz-menu{
+        padding: 0 3em;
+    }
+    
+    .quiz-menu h1{
+        font-size: 1.5em;
+    }
+    
+    .quiz-menu h1::after{
+        width: 65px;
+    }
+    
+}

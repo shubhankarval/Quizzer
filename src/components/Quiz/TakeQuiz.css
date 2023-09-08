@@ -82,3 +82,45 @@
   opacity: 1;
   right: 10px;
 }
+
+@media only screen and (max-width: 769px) {
+
+  .quiz-container {
+    width: 80%;
+    margin: 5em auto 0;
+  }
+    
+  .quiz-interface {
+    padding: 1em;
+  }
+  
+  .question {
+    font-size: 1.2em;
+  }
+  
+  .question span {
+    padding: 0 5px;
+  }
+
+  .quiz-interface ul {
+    padding: 0;
+    padding-left: 10px;
+    margin-top: 1.5em;
+  }
+  
+  .quiz-interface li {
+    font-size: 1em;
+    margin: 15px 0;
+  }
+    
+  .quiz-button-wrapper{
+    margin-top: 2em;
+  }
+  .quiz-interface button {
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+  }
+  
+}
